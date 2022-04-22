@@ -25,7 +25,7 @@ class ProductViewModel: ViewModel() {
         val list = arrayListOf<Product>()
 
         repeat(10){
-            val randomNum = (0..10).random()
+            val randomNum = (0..8).random()
             list.add(Product(Math.random().toString(), getMockColor(randomNum), randomNum.toString(), ""))
         }
         products.value = list
